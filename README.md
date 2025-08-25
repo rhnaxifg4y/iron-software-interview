@@ -32,7 +32,7 @@ To build and run this project, you will need the .NET SDK installed on your mach
 To build both the application and the test project, navigate to the root directory of this repository in your terminal and run the following command:
 
 ```bash
-dotnet build
+dotnet build OldPhonePadApp/OldPhonePadApp.csproj
 ```
 
 ### Running the Application
@@ -48,7 +48,7 @@ dotnet run --project OldPhonePadApp/OldPhonePadApp.csproj
 To run the unit tests and verify the correctness of the `OldPhonePad` implementation, run the following command from the root directory:
 
 ```bash
-dotnet test
+dotnet test OldPhonePadApp/OldPhonePadApp.csproj
 ```
 
 This will discover and execute all the tests in the `OldPhonePadApp.Tests` project and provide a summary of the results.
