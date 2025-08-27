@@ -48,7 +48,7 @@ dotnet run --project OldPhonePadApp/OldPhonePadApp.csproj
 To run the unit tests and verify the correctness of the `OldPhonePad` implementation, run the following command from the root directory:
 
 ```bash
-dotnet test OldPhonePadApp/OldPhonePadApp.csproj
+dotnet test OldPhonePadApp.Tests/OldPhonePadApp.Tests.csproj
 ```
 
 This will discover and execute all the tests in the `OldPhonePadApp.Tests` project and provide a summary of the results.

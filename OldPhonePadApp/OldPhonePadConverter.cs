@@ -41,12 +41,14 @@ namespace OldPhonePadApp
 
                 if (currentChar == '*')
                 {
-                    AppendCharacter(resultBuilder, previousChar, pressCount);
-                    previousChar = '\0';
-                    pressCount = 0;
-                    if (resultBuilder.Length > 0)
+                    if (pressCount > 0)
                     {
-                        resultBuilder.Length--; // Perform backspace
+                        previousChar = '\0';
+                        pressCount = 0;
+                    }
+                    else if (resultBuilder.Length > 0)
+                    {
+                        resultBuilder.Length--;
                     }
                     continue;
                 }
